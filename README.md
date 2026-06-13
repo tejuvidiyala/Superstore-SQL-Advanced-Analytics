@@ -2,24 +2,20 @@
 
 ## Project Overview
 
-This project was completed as part of the Celebal Technologies Data Engineering Internship Program. The aim of the project is to analyze the Superstore sales dataset using advanced SQL concepts such as Subqueries, CTEs, JOINs, and Window Functions.
+This project was completed as part of the Celebal Technologies Data Engineering Internship Program. The objective was to analyze the Superstore Sales dataset using advanced SQL concepts and generate meaningful business insights from customer and sales data.
 
-The dataset was first normalized into separate tables and then used to answer various business questions related to customer sales and order performance.
-
----
+The dataset was normalized into separate tables and analyzed using Subqueries, Common Table Expressions (CTEs), JOINs, and Window Functions.
 
 ## Objective
 
-The objective of this project is to apply advanced SQL concepts to perform customer sales analysis and generate useful business insights from the Superstore dataset.
-
----
+The main objective of this project is to apply advanced SQL techniques to perform customer sales analysis and answer business-related questions using real-world sales data.
 
 ## Dataset Information
 
 * Dataset: Superstore Sales Dataset
 * Format: CSV
 * Total Records: 9,994
-* Important Columns:
+* Key Columns:
 
   * Order ID
   * Customer ID
@@ -31,25 +27,21 @@ The objective of this project is to apply advanced SQL concepts to perform custo
   * Region
   * Category
 
----
-
 ## Tables Created
 
-The original dataset was divided into the following tables:
+The original dataset was normalized into the following tables:
 
 ### Customers
 
-Stores customer information such as customer name, segment, city, state, and region.
+Contains customer details such as customer name, segment, city, state, and region.
 
 ### Products
 
-Stores product details including product name, category, and sub-category.
+Contains product information including product name, category, and sub-category.
 
 ### Orders
 
-Stores order transaction details such as sales, quantity, discount, and profit.
-
----
+Contains order transaction details such as sales, quantity, discount, and profit.
 
 ## SQL Concepts Used
 
@@ -64,8 +56,6 @@ Stores order transaction details such as sales, quantity, discount, and profit.
   * RANK()
   * DENSE_RANK()
 
----
-
 ## Analysis Performed
 
 The following analyses were carried out:
@@ -76,32 +66,26 @@ The following analyses were carried out:
 4. Customers with above-average sales
 5. Customer ranking using RANK() and DENSE_RANK()
 6. Order ranking using ROW_NUMBER()
-7. Top 3 customers based on sales
-8. Customer sales ranking using JOIN + CTE + Window Functions
+7. Top 3 customers based on total sales
+8. Customer sales ranking using JOIN, CTE, and Window Functions
 9. Top 5 customers
 10. Bottom 5 customers
 11. Customers with only one order
 12. Highest order value per customer
 
----
-
 ## Key Findings
 
-* A small group of customers generated a large portion of total sales.
-* Some customers placed only one order.
-* Several customers had sales significantly higher than the average customer sales.
-* Window functions helped identify top-performing customers and highest-value orders.
-* Data normalization reduced redundancy and improved data organization.
-
----
+* A small group of customers contributed significantly to overall sales.
+* Several customers generated sales well above the average customer sales value.
+* Only a few customers placed a single order.
+* Window functions helped identify customer rankings and highest-value orders.
+* Normalization reduced data redundancy and improved data organization.
 
 ## Tools Used
 
 * Databricks SQL
 * GitHub
 * Microsoft Word
-
----
 
 ## Repository Structure
 
@@ -114,10 +98,6 @@ WEEK3
 ├── superstore.csv
 ```
 
----
-
 ## Conclusion
 
-This project helped in understanding how advanced SQL concepts can be used to analyze real-world sales data. By using Subqueries, CTEs, JOINs, and Window Functions, meaningful insights were generated from the Superstore dataset. The project also provided hands-on experience with Databricks and SQL-based data analysis.
-
-##
+This project provided practical experience in applying advanced SQL concepts to a real-world dataset. Through normalization, customer analysis, ranking techniques, and sales insights, the project demonstrated how SQL can be used to support data-driven decision-making and business analysis.
